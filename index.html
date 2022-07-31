@@ -62,9 +62,10 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
+                            <!-- fm时一个iframe标签的name值，意思时该链接在指定的iframe标签中展示 -->
+                            <dd><a href="/user/user_info.html" target="fm"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
                             <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+                            <dd><a href="/user/user_pwd.html" target="fm"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
                         </dl>
                     </li>
                 </ul>
@@ -73,7 +74,7 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <!-- 一打开页面就显示dashboard页面 -->
+            <!-- 一打开页面就显示dashboard页面 fm时一个iframe标签的name值，意思时该链接在指定的iframe标签中展示-->
             <iframe name="fm" src="/home/dashboard.html" frameborder="0"></iframe>
         </div>
 
